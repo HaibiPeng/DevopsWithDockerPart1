@@ -1,0 +1,55 @@
+{
+  "name": "frontend-example-docker",
+  "version": "1.0.0",
+  "repository": "https://github.com/docker-hy/frontend-example-docker",
+  "description": "Example frontend project for docker course",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode production && serve -s -l 5000 dist",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --hot",
+    "lint": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stats": "webpack --mode production --json --optimize-minimize > stats.json"
+  },
+  "author": "Jami Kousa",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "axios": "^0.18.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^5.1.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.83.0",
+    "serve": "^11.3.0",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
+}

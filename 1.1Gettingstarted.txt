@@ -1,0 +1,5 @@
+(base) jdszsl722:~ jdszsl$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+50eb7b9022b1        nginx               "/docker-entrypoint.…"   3 minutes ago       Exited (0) 26 seconds ago                       laughing_montalcini
+097f509301be        nginx               "/docker-entrypoint.…"   13 minutes ago      Up 2 minutes                80/tcp              elated_lichterman
+0bdbc3cddb28        ubuntu              "bash"                   46 minutes ago      Exited (0) 19 seconds ago                       xenodochial_cori

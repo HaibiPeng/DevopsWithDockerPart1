@@ -1,0 +1,35 @@
+bash-3.2$ docker run devopsdockeruh/exec_bash_exercise
+Unable to find image 'devopsdockeruh/exec_bash_exercise:latest' locally
+latest: Pulling from devopsdockeruh/exec_bash_exercise
+1c6172af85ee: Pull complete 
+b194b0e3c928: Pull complete 
+1f5ec00f35d5: Pull complete 
+93b1353672b6: Pull complete 
+3d7f38db3cca: Pull complete 
+21e102f9fe89: Pull complete 
+d851ffed797c: Pull complete 
+a45031e28c68: Pull complete 
+ca3c1414856f: Pull complete 
+02c74c9936fd: Pull complete 
+ddb55f8ab0a8: Pull complete 
+Digest: sha256:d38b6f6b0eed2880e25c9eb7f83f1cd016ffe3a56c9a3fec6e7bee480bf1ed0f
+Status: Downloaded newer image for devopsdockeruh/exec_bash_exercise:latest
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+^C
+(base) jdszsl722:Docker jdszsl$ docker ps -a
+CONTAINER ID        IMAGE                               COMMAND                  CREATED              STATUS                     PORTS               NAMES
+d58d9519933e        devopsdockeruh/exec_bash_exercise   "docker-entrypoint.s…"   About a minute ago   Exited (0) 5 seconds ago                       priceless_hypatia
+(base) jdszsl722:Docker jdszsl$ docker start d58d9519933e
+d58d9519933e
+(base) jdszsl722:Docker jdszsl$ docker exec -it d58d9519933e bash
+root@d58d9519933e:/usr/app# tail -f ./logs.txt
+"Docker is easy"
+Thu, 29 Oct 2020 22:15:20 GMT
+Thu, 29 Oct 2020 22:15:23 GMT
+Thu, 29 Oct 2020 22:15:26 GMT
+Thu, 29 Oct 2020 22:15:29 GMT
+Secret message is:
+"Docker is easy"
+^C

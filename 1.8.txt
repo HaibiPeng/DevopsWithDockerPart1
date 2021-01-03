@@ -1,0 +1,31 @@
+(base) jdszsl722:docker jdszsl$ docker run -d -v "$(pwd)/logs.txt:/usr/app/logs.txt" devopsdockeruh/first_volume_exercise
+690bfb2429091d637c6d4804c80164fce6e45cae4dd5a03d184c030114334ad8
+
+Sun, 03 Jan 2021 12:19:33 GMT
+Sun, 03 Jan 2021 12:19:36 GMT
+Sun, 03 Jan 2021 12:19:39 GMT
+Sun, 03 Jan 2021 12:19:42 GMT
+Secret message is:
+"Volume bind mount is easy"
+Sun, 03 Jan 2021 12:19:48 GMT
+Sun, 03 Jan 2021 12:19:51 GMT
+Sun, 03 Jan 2021 12:19:54 GMT
+Sun, 03 Jan 2021 12:19:57 GMT
+Secret message is:
+"Volume bind mount is easy"
+Sun, 03 Jan 2021 12:20:03 GMT
+Sun, 03 Jan 2021 12:20:06 GMT
+Sun, 03 Jan 2021 12:20:09 GMT
+Sun, 03 Jan 2021 12:20:12 GMT
+Secret message is:
+"Volume bind mount is easy"
+Sun, 03 Jan 2021 12:20:18 GMT
+Sun, 03 Jan 2021 12:20:21 GMT
+Sun, 03 Jan 2021 12:20:24 GMT
+Sun, 03 Jan 2021 12:20:27 GMT
+Secret message is:
+"Volume bind mount is easy"
+Sun, 03 Jan 2021 12:20:33 GMT
+Sun, 03 Jan 2021 12:20:36 GMT
+Sun, 03 Jan 2021 12:20:39 GMT
+Sun, 03 Jan 2021 12:20:42 GMT

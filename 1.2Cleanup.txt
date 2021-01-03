@@ -1,0 +1,6 @@
+(base) jdszsl722:Docker jdszsl$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+(base) jdszsl722:Docker jdszsl$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              d70eaf7277ea        6 days ago          72.9MB
+nginx               latest              f35646e83998        2 weeks ago         133MB
