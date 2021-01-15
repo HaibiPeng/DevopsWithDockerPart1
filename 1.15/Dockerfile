@@ -1,6 +1,8 @@
-#1.15
-#docker build -t deno-project .
-#docker run -d --rm -p 7777:7777 deno-project
+#1.15 a simple project based on deno
+#docker-compose up --build
+#docker image tag 115_app photograhb/deno-project
+#docker image push photograhb/deno-project
+# https://hub.docker.com/repository/docker/photograhb/deno-project
 
 FROM hayd/alpine-deno:latest
 
