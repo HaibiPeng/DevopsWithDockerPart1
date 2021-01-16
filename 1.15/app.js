@@ -1,24 +1,17 @@
 import { Application, Router } from "https://deno.land/x/oak@v6.3.2/mod.ts";
+import { Client } from "https://deno.land/x/postgres@v0.4.5/mod.ts";
 
+const client = new Client();
 const app = new Application();
-app.use(async(context, next) => {
-  try {
-    await next();
-  } catch(e) {
-    console.log(e);
-  }
-});
 const router = new Router();
 
 const hello = async({response}) => {
-  response.body = 'Hello world!';
+  await client.connect();
+  const res = await client.query('SELECT * FROM users');
+  await client.end();
+  response.body = `Hello world -- total rows: ${res.rowCount}`;
 }
 
 router.get('/', hello);
 app.use(router.routes());
-
-if (!Deno.env.get('TEST_ENVIRONMENT')) {
-  app.listen({ port: 7777 });
-}
-
-export { app };
+app.listen({ port: 7777 });
